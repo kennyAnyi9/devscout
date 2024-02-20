@@ -44,7 +44,7 @@ export function CommandDialogDemo() {
           onClick={() => {
             setOpen(true);
           }}
-          className="hidden lg:flex gap-20 items-center text-sm leading-6 rounded-md py-1.5 pl-2 pr-3 shadow-sm text-gray-400 dark:text-white/50 dark:bg-background-dark dark:brightness-[1.1] dark:ring-1 dark:hover:brightness-[1.25] bg-white ring-1 ring-gray-400/20 hover:ring-gray-600/25 dark:ring-gray-600/30 dark:hover:ring-gray-500/30 focus:outline-primary"
+          className="hidden lg:flex gap-20 items-center text-sm leading-6 rounded-md py-1.5 pl-2 pr-3 shadow-sm text-gray-400 dark:text-white/50 dark:bg-transparent dark:brightness-[1.1] dark:ring-1 dark:hover:brightness-[1.25] bg-white ring-1 ring-gray-400/20 hover:ring-gray-600/25 dark:ring-gray-600/30 dark:hover:ring-gray-500/30 focus:outline-primary"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

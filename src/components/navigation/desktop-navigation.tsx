@@ -8,7 +8,7 @@ import { Button } from "../ui/button";
 
 const Navbar = () => {
   return (
-    <header className="bottom__liner h-20 flex flex-row items-center justify-between p-10 px-20 z-10">
+    <header className="hidden bottom__liner h-20 lg:flex flex-row items-center justify-between p-10 px-20 z-10">
       <div className="font-semibold text-2xl">{"{DevScout}"}</div>
       <div>
         <NavigationMenuDemo />

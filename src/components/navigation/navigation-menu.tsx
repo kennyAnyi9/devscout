@@ -16,39 +16,28 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Alert Dialog",
+    title: "General Tools for Devs",
     href: "/docs/primitives/alert-dialog",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Tool Roadmaps with interactive timelines. Library Showcases with demos and use cases.Learning Resources like tutorials and workshops.",
   },
   {
-    title: "Hover Card",
+    title: "reading-essenitals",
     href: "/docs/primitives/hover-card",
     description:
-      "For sighted users to preview content available behind a link.",
+      "So, you got to website, and you were reading a blog post but could not read anything or would probably want to keep the link to access it latter. this cool feature would have an input box and also a custom alias box for renaming the links for future reference purposes. another cool thing is that there would be a button next to these custom links to generate page summaries powered by chatgpt-4.Problem solved: this tailored to replacing bookmarks.",
   },
   {
-    title: "Progress",
+    title: "package-installations",
     href: "/docs/primitives/progress",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "so, imagine you wanted to install packages and did looking for one place to visit where just the command for installation of any package is available to copy and paste in you terminal another cool thing is that you can generate the commands using ai tools incorporated.for instance you prompt the ai: install nextjs, tailwind, typescript, prisma, sanity and hit enter then the comand is returned for both windows, linux and macos",
   },
   {
-    title: "Scroll-area",
+    title: "eneral tools for devs",
     href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
-  },
-  {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  },
-  {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+      "this would contain tools in categories like roadmaps, css libraries, js libraires developers should know and a short description of what they do as well as links to access them",
   },
 ];
 
@@ -57,7 +46,9 @@ export function NavigationMenuDemo() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="dark:bg-transparent">
+            Newbie
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
@@ -91,7 +82,9 @@ export function NavigationMenuDemo() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Components</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="dark:bg-transparent">
+            Features
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -108,8 +101,10 @@ export function NavigationMenuDemo() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Documentation
+            <NavigationMenuLink
+              className={`${navigationMenuTriggerStyle()} dark:bg-transparent`}
+            >
+              Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
